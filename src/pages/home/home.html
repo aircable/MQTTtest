@@ -1,0 +1,23 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            MQTT-testing
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+            <ion-col col-auto>
+                <button ion-button full [color]="MQTTconnected ? 'danger' : 'light'" (click)="connectMQTT()">REMOTE</button>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+
+    <color-picker [hexColor]="'#EF2C98'" (colorChanged)="receiveCmd( $event )"></color-picker>
+
+    <canvas #barCanvas height="50"></canvas>
+
+</ion-content>
