@@ -8,7 +8,7 @@ import { BackgroundMode } from '@ionic-native/background-mode';
 
 import { ColorPickerComponent } from "../components/color-picker/color-picker";
 import { ChartsModule } from 'ng2-charts';
-import { MqttMessage, MqttModule, MqttService } from 'angular2-mqtt';
+import { MqttMessage, MqttModule, MqttService } from 'ngx-mqtt';
 
 
 import { MyApp } from './app.component';
