@@ -8,22 +8,22 @@ import { BackgroundMode } from '@ionic-native/background-mode';
 
 import { ColorPickerComponent } from "../components/color-picker/color-picker";
 import { ChartsModule } from 'ng2-charts';
-import { MqttMessage, MqttModule, MqttService } from 'ngx-mqtt';
+import { MqttMessage, MqttModule, MqttService, MqttServiceOptions } from 'ngx-mqtt';
 
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
 
-export const MQTT_SERVICE_OPTIONS = {
-        connectOnCreate: false,
-        hostname: 'aircable.net',
-        port: 8883, // unsecured web socket port ws:// will not work on Progressive Web App via https://
-        protocol: 'wss',
-        path: '',
-        username: 'aircable',
-        password: 'aircable',
-    };
+export const MQTT_SERVICE_OPTIONS: MqttServiceOptions = {
+    connectOnCreate: false,
+    hostname: 'aircable.net',
+    port: 8883, // unsecured web socket port ws:// will not work on Progressive Web App via https://
+    protocol: 'wss',
+    path: '',
+    username: 'aircable',
+    password: 'aircable',
+};
 
 export function mqttServiceFactory() {
     return new MqttService( MQTT_SERVICE_OPTIONS );

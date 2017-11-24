@@ -49,7 +49,7 @@
     "ionic-plugin-keyboard": "^2.2.1",
     "ionicons": "3.0.0",
     "ng2-charts": "^1.6.0",
-    "ngx-mqtt": "^5.0.0",
+    "ngx-mqtt": "^5.0.1",
     "rxjs": "5.5.2",
     "shelljs": "^0.7.8",
     "sw-toolbox": "3.6.0",

@@ -20,7 +20,7 @@ import { BackgroundMode } from '@ionic-native/background-mode';
 import { Chart } from 'chart.js';
 
 // MQTT
-import { MqttMessage, MqttModule, MqttService } from 'ngx-mqtt';
+import { MqttMessage, MqttModule, MqttService, MqttServiceOptions } from 'ngx-mqtt';
 
 @Component({
     selector: 'page-home',
@@ -40,7 +40,7 @@ export class HomePage {
     public a = 0;
     public b = 0;
 
-    private MQTT_SERVICE_OPTIONS = {
+    private MQTT_SERVICE_OPTIONS: MqttServiceOptions = {
         connectOnCreate: false,
         hostname: 'aircable.net',
         port: 8883, // unsecured web socket port ws:// will not work on Progressive Web App via https://
